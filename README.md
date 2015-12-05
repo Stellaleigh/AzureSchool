@@ -1,14 +1,6 @@
-# jekyll-reveal.js
+# AzureSchool
 
-A Jekyll-based framework for creating presentations based on Reveal.js and markdown.
-
-## Introduction
-
-If you like [Reveal.js][] for creating your online presentations, like the site
-management [Jekyll][] gives you and like [Markdown][] because of its easy and clean look, 
-here's an easy way to create a presentation using Jekyll, Markdown and Reveal.js.
-
-See the [example presentation][] created using the contents in this repository and "jekyll build".
+Prototyping some ideas to simplify the tutorial experience in Azure App Service
 
 ## Howto
 
@@ -16,13 +8,7 @@ First, [install Jekyll][]. After that, clone this repository and create a branch
 for your new presentation:
 
     git clone --recursive https://github.com/dploeger/jekyll-revealjs.git
-    git branch presentation1
-    git checkout presentation1
-
-Clean the Example presentation:
-
-    git rm _posts/*
-    mkdir _posts
+    git checkout -b presentation1
 
 After that, add your slides into the _posts-subdirectory in clean Markdown syntax
 and you're ready to go with building your presentation with Jekyll:
@@ -33,8 +19,7 @@ You can even manage multiple presentations using the power of git. Simply branch
 master branch to create a new presentation:
 
     git checkout master
-    git branch presentation2
-    git checkout presentation2
+    git checkout -b presentation2
 
 ## Slide filenames
 
@@ -151,4 +136,3 @@ jekyll-reveal.js is configured, so that speaker notes are identified after an in
 [install Jekyll]: http://jekyllrb.com/docs/installation/  
 [options]: https://github.com/hakimel/reveal.js#configuration
 [depedencies]: https://github.com/hakimel/reveal.js#dependencies
-
